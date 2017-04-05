@@ -78,32 +78,28 @@ Through the concepts learned in this class, we were able to answer various quest
 -What is the probability of being in state 1 at time 1 and state 2 at time 5?
 -What is the probability that the process goes to state 4 before state 2?
 
+More will be added on these subjects later.
+
 ## Types of Stochastic Processes
-In PSTAT 160A, we covered two types of stochastic processes:
+In PSTAT 160A, we covered two types of general stochastic processes:
 
 ### Markov Chains
 
--Markov Chains are, at the basic level, a discrete time, discrete space stochastic process
+Markov Chains are stochastic processes which have discrete time indices & discrete state spaces.
+Each state of a Markov Chain depends only on the previous state (e.g. X2 only depends on X1, etc.)
 
--Each state of a Markov Chain depends only on the previous state
+For every current state, we define a probability the random process moves into a different state (for every possible resultant state) by the next unit of time. 
 
--For every stating state, we define a probability the random process moves into a different state (for every possible resultant state) by the next unit of time.
-
--We call these probabilities transition probabilities
--For every initial state, the sum of transition probabilities must equal 1.
+We call these probabilities transition probabilities. For every initial state, the sum of transition probabilities must equal 1 (the probability of going to all possible different states.
 
 ### Poisson Process
 
--A continuous time, discrete space stochastic process
+A Poisson Process is a stochastic process with continuous time indices & discrete state space.
+This is a type of counting process; a Poisson Process counts the number of events that have occurred at time t.
 
--A type of counting process, i.e. a Poisson Process counts the number of events that have occurred time x.
+Ex) The number of earthquakes in California
 
--Example: The number of earthquakes in California
-
--By the nature of a counting process, a Poisson process can only increase in value.
-
--The number of events in any time interval is a Poisson random variable.
-
--The number of events in any time intervals of similar length are identically and independently distributed Poisson random variables.
-
--The time between any two events (called the waiting times or interval arrival times) are identical and independent Exponential random variables.
+By the nature of a counting process, a Poisson Process can only increase in value.
+The number of events in any time interval is a Poisson RV. 
+The number of events in any time intervals of similar length are identically and independently distributed Poisson random variables.
+The time between any two events (called the waiting times or interval arrival times) are identical and independent Exponential RVs.
